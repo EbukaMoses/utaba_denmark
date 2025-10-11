@@ -1,0 +1,580 @@
+{
+  "services": [
+    {
+      "id": "smart-home-wiring",
+      "title": "Smart Home Wiring",
+      "shortDescription": "Professional installation of smart home wiring solutions for convenience, comfort, and efficiency.",
+      "fullDescription": "Transform your living space into an intelligent, automated home with our comprehensive smart home wiring solutions. We design and install cutting-edge electrical infrastructure that seamlessly integrates with modern smart devices, creating a connected ecosystem that enhances your daily life through automation, energy efficiency, and enhanced security.",
+      "image": "/hero1.jpg",
+      "icon": "Home",
+      "features": [
+        "Complete electrical infrastructure design",
+        "Smart device compatibility integration",
+        "Centralized control system installation",
+        "Voice assistant integration (Alexa, Google Home)",
+        "Mobile app remote control setup",
+        "Automated lighting and climate control",
+        "Smart security system integration",
+        "Energy monitoring and optimization"
+      ],
+      "benefits": [
+        "Seamless integration of all smart devices",
+        "Enhanced energy efficiency and cost savings",
+        "Improved home security and monitoring",
+        "Convenient voice and mobile control",
+        "Future-proof infrastructure for new technologies",
+        "Increased property value and market appeal"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Smart Home Assessment",
+          "description": "Comprehensive evaluation of your home's current electrical system and smart home requirements"
+        },
+        {
+          "step": 2,
+          "title": "Custom System Design",
+          "description": "Tailored electrical and automation blueprint designed for your specific needs and preferences"
+        },
+        {
+          "step": 3,
+          "title": "Professional Installation",
+          "description": "Expert installation of wiring, hubs, and smart devices with minimal disruption to your home"
+        },
+        {
+          "step": 4,
+          "title": "System Integration",
+          "description": "Complete setup and integration of all smart devices and control systems"
+        },
+        {
+          "step": 5,
+          "title": "Training & Support",
+          "description": "Comprehensive training on system operation and ongoing technical support"
+        }
+      ],
+      "technologies": [
+        "Control4",
+        "Crestron",
+        "Lutron",
+        "Amazon Alexa",
+        "Google Home",
+        "Apple HomeKit"
+      ],
+      "pricing": {
+        "starting": "₦800,000",
+        "note": "Pricing depends on home size and complexity of smart home features"
+      },
+      "testimonials": [
+        {
+          "name": "Sarah Johnson",
+          "role": "Homeowner",
+          "location": "Lagos, Nigeria",
+          "content": "Onye BF Tech transformed our home with their smart wiring solutions. The attention to detail and professional service exceeded our expectations. Our energy bills have dropped significantly!",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "electrical-wiring-automation",
+      "title": "Electrical Wiring & Automation",
+      "shortDescription": "Reliable electrical wiring combined with advanced automation to power your modern spaces.",
+      "fullDescription": "Our electrical wiring and automation services combine traditional electrical expertise with cutting-edge automation technology. We ensure your residential or commercial property has a robust, safe, and intelligent electrical infrastructure that meets all modern demands while providing enhanced control and energy efficiency.",
+      "image": "/hero2.jpg",
+      "icon": "Zap",
+      "features": [
+        "Complete electrical system design and planning",
+        "Advanced circuit breaker and protection systems",
+        "Automated power management and load balancing",
+        "Surge protection and power quality optimization",
+        "Emergency backup power systems",
+        "Smart meter and energy monitoring integration",
+        "Industrial-grade electrical installations",
+        "Safety compliance and certification"
+      ],
+      "benefits": [
+        "Enhanced electrical safety and reliability",
+        "Significant reduction in energy consumption",
+        "Automated load management and optimization",
+        "Protection against power surges and outages",
+        "Compliance with electrical safety regulations",
+        "Improved operational efficiency for businesses"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Electrical Assessment",
+          "description": "Thorough inspection and analysis of current electrical infrastructure"
+        },
+        {
+          "step": 2,
+          "title": "Automation Design",
+          "description": "Custom electrical and automation system blueprint"
+        },
+        {
+          "step": 3,
+          "title": "Professional Installation",
+          "description": "Expert installation of wiring, panels, and automation equipment"
+        },
+        {
+          "step": 4,
+          "title": "System Testing",
+          "description": "Comprehensive safety testing and functionality verification"
+        },
+        {
+          "step": 5,
+          "title": "Certification",
+          "description": "Official certification and documentation for compliance"
+        }
+      ],
+      "technologies": [
+        "Schneider Electric",
+        "ABB",
+        "Siemens",
+        "Eaton",
+        "Leviton",
+        "Square D"
+      ],
+      "pricing": {
+        "starting": "₦600,000",
+        "note": "Cost varies based on property size, complexity, and automation requirements"
+      },
+      "testimonials": [
+        {
+          "name": "Michael Chen",
+          "role": "Business Owner",
+          "location": "Abuja, Nigeria",
+          "content": "Outstanding electrical automation work. The team was professional, efficient, and delivered exactly what was promised. Highly recommend their services.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "sound-system-automation",
+      "title": "Sound System Automation",
+      "shortDescription": "High-quality sound system automation for seamless entertainment and immersive audio experience.",
+      "fullDescription": "Experience premium audio throughout your home or business with our advanced sound system automation. We design and install multi-room audio systems that deliver crystal-clear sound with effortless control from any device, creating immersive entertainment environments that adapt to your lifestyle and preferences.",
+      "image": "/hero3.jpg",
+      "icon": "Volume2",
+      "features": [
+        "Multi-room audio distribution systems",
+        "High-fidelity speaker installation",
+        "Wireless streaming integration (Bluetooth, WiFi)",
+        "Voice control compatibility with smart assistants",
+        "Centralized audio management systems",
+        "Outdoor audio solutions and weatherproofing",
+        "Home theater and media room setups",
+        "Background music automation and scheduling"
+      ],
+      "benefits": [
+        "Seamless audio experience throughout your space",
+        "Control from smartphones, tablets, or voice commands",
+        "Integration with streaming services and music libraries",
+        "Customizable audio zones for different areas",
+        "Professional-grade sound quality and clarity",
+        "Easy-to-use interface and automated scenes"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Acoustic Assessment",
+          "description": "Professional evaluation of room acoustics and audio requirements"
+        },
+        {
+          "step": 2,
+          "title": "System Design",
+          "description": "Custom audio solution with strategic speaker placement and zoning"
+        },
+        {
+          "step": 3,
+          "title": "Equipment Installation",
+          "description": "Professional installation of speakers, amplifiers, and control systems"
+        },
+        {
+          "step": 4,
+          "title": "Calibration & Tuning",
+          "description": "Audio optimization and equalization for perfect sound quality"
+        },
+        {
+          "step": 5,
+          "title": "User Training",
+          "description": "Comprehensive training on system operation and control"
+        }
+      ],
+      "technologies": [
+        "Sonos",
+        "Bose",
+        "Sonance",
+        "Control4",
+        "Crestron",
+        "Apple AirPlay"
+      ],
+      "pricing": {
+        "starting": "₦450,000",
+        "note": "Pricing depends on number of zones, speaker quality, and system complexity"
+      },
+      "testimonials": [
+        {
+          "name": "Amara Okafor",
+          "role": "Restaurant Owner",
+          "location": "Port Harcourt, Nigeria",
+          "content": "The sound system automation in our restaurant has been game-changing. The multi-room audio creates the perfect ambiance for our customers.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "cctv",
+      "title": "CCTV & Security Systems",
+      "shortDescription": "Comprehensive CCTV installation and monitoring solutions to keep your property secure.",
+      "fullDescription": "Protect your property with our state-of-the-art CCTV and security systems. We provide comprehensive surveillance solutions with high-definition cameras, intelligent analytics, and remote monitoring capabilities to ensure your safety 24/7, giving you complete peace of mind and protection.",
+      "image": "/hero4.jpg",
+      "icon": "Video",
+      "features": [
+        "4K Ultra HD camera systems with night vision",
+        "Motion detection and intelligent alerts",
+        "Remote viewing via mobile apps and web browsers",
+        "Cloud storage and local recording options",
+        "Facial recognition and license plate detection",
+        "Integration with alarm systems and smart locks",
+        "24/7 professional monitoring services",
+        "Weatherproof and vandal-resistant designs"
+      ],
+      "benefits": [
+        "Enhanced property security and crime deterrence",
+        "Remote monitoring from anywhere in the world",
+        "High-quality evidence collection for investigations",
+        "Potential reduction in insurance premiums",
+        "Peace of mind for you and your family",
+        "Integration with existing security infrastructure"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Security Assessment",
+          "description": "Comprehensive evaluation of security risks and coverage requirements"
+        },
+        {
+          "step": 2,
+          "title": "Camera Planning",
+          "description": "Strategic camera placement for optimal surveillance coverage"
+        },
+        {
+          "step": 3,
+          "title": "Installation",
+          "description": "Professional mounting, wiring, and system setup"
+        },
+        {
+          "step": 4,
+          "title": "Configuration",
+          "description": "Mobile app setup and remote access configuration"
+        },
+        {
+          "step": 5,
+          "title": "Training",
+          "description": "Complete training on monitoring and playback features"
+        }
+      ],
+      "technologies": [
+        "Hikvision",
+        "Dahua",
+        "Axis Communications",
+        "Bosch Security",
+        "Honeywell",
+        "Arlo"
+      ],
+      "pricing": {
+        "starting": "₦350,000",
+        "note": "Cost varies based on number of cameras, features, and monitoring requirements"
+      },
+      "testimonials": [
+        {
+          "name": "David Williams",
+          "role": "Property Manager",
+          "location": "Lagos, Nigeria",
+          "content": "Their CCTV installation gave us complete peace of mind. The system is reliable, easy to use, and the image quality is excellent. Worth every naira!",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "fire-alarm",
+      "title": "Fire Alarm Systems",
+      "shortDescription": "Advanced fire alarm systems to safeguard lives and property with timely alerts.",
+      "fullDescription": "Ensure the safety of your property and occupants with our advanced fire alarm systems. We install comprehensive fire detection and alarm systems that provide early warning, automatic response, and compliance with all safety regulations, protecting what matters most to you.",
+      "image": "/hero5.jpg",
+      "icon": "Bell",
+      "features": [
+        "Advanced smoke and heat detection sensors",
+        "Automatic fire suppression system integration",
+        "Emergency lighting and exit signage",
+        "Voice evacuation and alert systems",
+        "Remote monitoring and notification systems",
+        "Battery backup and power redundancy",
+        "Zone-based detection and response",
+        "Compliance with fire safety regulations"
+      ],
+      "benefits": [
+        "Early fire detection and rapid response",
+        "Life-saving alerts and evacuation guidance",
+        "Property protection and damage minimization",
+        "Insurance compliance and premium benefits",
+        "Regulatory compliance and peace of mind",
+        "Integration with building management systems"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Risk Assessment",
+          "description": "Comprehensive fire risk evaluation and system requirements analysis"
+        },
+        {
+          "step": 2,
+          "title": "System Design",
+          "description": "Custom fire alarm system design meeting all safety standards"
+        },
+        {
+          "step": 3,
+          "title": "Installation",
+          "description": "Professional installation of detectors, alarms, and control panels"
+        },
+        {
+          "step": 4,
+          "title": "Testing",
+          "description": "Comprehensive system testing and functionality verification"
+        },
+        {
+          "step": 5,
+          "title": "Certification",
+          "description": "Official fire safety certification and compliance documentation"
+        }
+      ],
+      "technologies": [
+        "Honeywell Fire Systems",
+        "Johnson Controls",
+        "Siemens Fire Safety",
+        "Notifier",
+        "Edwards Signaling",
+        "Simplex"
+      ],
+      "pricing": {
+        "starting": "₦550,000",
+        "note": "Pricing varies based on building size, complexity, and regulatory requirements"
+      },
+      "testimonials": [
+        {
+          "name": "Grace Adebayo",
+          "role": "School Administrator",
+          "location": "Ibadan, Nigeria",
+          "content": "The fire alarm system installation was flawless. The team ensured everything was compliant with safety regulations. We feel much safer now.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "embedded-systems-automation",
+      "title": "Embedded Systems & Automation",
+      "shortDescription": "Custom embedded system designs to automate and streamline your operations.",
+      "fullDescription": "Leverage the power of custom embedded systems to automate complex processes and improve operational efficiency. We design and implement tailored automation solutions for industrial, commercial, and residential applications, creating intelligent systems that adapt to your specific needs and requirements.",
+      "image": "/hero1.jpg",
+      "icon": "Cpu",
+      "features": [
+        "Custom microcontroller and microprocessor programming",
+        "IoT device development and integration",
+        "Industrial automation and process control",
+        "Real-time data logging and analytics",
+        "Remote monitoring and control systems",
+        "Sensor integration and data acquisition",
+        "Machine learning and AI integration",
+        "Scalable and modular system architecture"
+      ],
+      "benefits": [
+        "Increased operational efficiency and productivity",
+        "Reduced manual intervention and human error",
+        "Real-time monitoring and predictive maintenance",
+        "Cost savings through process optimization",
+        "Scalable solutions for growing operations",
+        "Custom-tailored to your specific requirements"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Requirements Analysis",
+          "description": "Detailed understanding of your automation needs and operational goals"
+        },
+        {
+          "step": 2,
+          "title": "System Design",
+          "description": "Custom embedded solution architecture and component selection"
+        },
+        {
+          "step": 3,
+          "title": "Development",
+          "description": "Programming, hardware integration, and system development"
+        },
+        {
+          "step": 4,
+          "title": "Testing",
+          "description": "Rigorous testing, validation, and performance optimization"
+        },
+        {
+          "step": 5,
+          "title": "Deployment",
+          "description": "Professional installation, commissioning, and user training"
+        }
+      ],
+      "technologies": [
+        "Arduino",
+        "Raspberry Pi",
+        "STM32",
+        "ESP32",
+        "Texas Instruments",
+        "Microchip"
+      ],
+      "pricing": {
+        "starting": "₦750,000",
+        "note": "Custom pricing based on project complexity, hardware requirements, and development scope"
+      },
+      "testimonials": [
+        {
+          "name": "Emmanuel Nwosu",
+          "role": "Tech Entrepreneur",
+          "location": "Enugu, Nigeria",
+          "content": "Their embedded systems automation has streamlined our manufacturing process. The custom solution they provided is innovative and reliable.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "smart-locks",
+      "title": "Smart Locks & Biometric Security",
+      "shortDescription": "Advanced biometric and smart lock systems for enhanced security and convenient access control.",
+      "fullDescription": "Secure your property with cutting-edge smart lock and biometric security systems. Our advanced access control solutions combine fingerprint recognition, facial detection, and smart card technology to provide secure, convenient, and intelligent entry management for residential and commercial properties.",
+      "image": "/hero5.jpg",
+      "icon": "Shield",
+      "features": [
+        "Fingerprint and facial recognition systems",
+        "Smart card and mobile app access",
+        "Keyless entry with PIN codes",
+        "Remote access management and monitoring",
+        "Activity logging and access reports",
+        "Integration with security cameras and alarms",
+        "Emergency access override systems",
+        "Weatherproof and tamper-resistant design"
+      ],
+      "benefits": [
+        "Enhanced security with biometric verification",
+        "Convenient keyless entry for family and staff",
+        "Complete access control and monitoring",
+        "Real-time notifications and alerts",
+        "Integration with existing security systems",
+        "Increased property value and security rating"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Security Assessment",
+          "description": "Evaluation of current security measures and access control requirements"
+        },
+        {
+          "step": 2,
+          "title": "System Design",
+          "description": "Custom smart lock solution design with biometric capabilities"
+        },
+        {
+          "step": 3,
+          "title": "Installation",
+          "description": "Professional installation of locks, sensors, and control systems"
+        },
+        {
+          "step": 4,
+          "title": "Configuration",
+          "description": "Biometric enrollment and mobile app setup"
+        },
+        {
+          "step": 5,
+          "title": "Training",
+          "description": "Complete training on system operation and management"
+        }
+      ],
+      "technologies": [
+        "August Smart Locks",
+        "Schlage Encode",
+        "Yale Assure Lock",
+        "Kwikset Smart Locks",
+        "Nest x Yale",
+        "Samsung Smart Locks"
+      ],
+      "pricing": {
+        "starting": "₦280,000",
+        "note": "Pricing depends on number of access points and biometric features required"
+      },
+      "testimonials": [
+        {
+          "name": "Fatima Hassan",
+          "role": "Real Estate Developer",
+          "location": "Kano, Nigeria",
+          "content": "The biometric security system they installed provides top-tier security for our luxury apartments. Residents love the convenience and security features.",
+          "rating": 5
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "role": "Homeowner",
+      "location": "Lagos, Nigeria",
+      "content": "Onye BF Tech transformed our home with their smart wiring solutions. The attention to detail and professional service exceeded our expectations. Our energy bills have dropped significantly!",
+      "rating": 5,
+      "service": "Smart Home Wiring"
+    },
+    {
+      "name": "Michael Chen",
+      "role": "Business Owner",
+      "location": "Abuja, Nigeria",
+      "content": "Outstanding electrical automation work. The team was professional, efficient, and delivered exactly what was promised. Highly recommend their services.",
+      "rating": 5,
+      "service": "Electrical Wiring & Automation"
+    },
+    {
+      "name": "Amara Okafor",
+      "role": "Restaurant Owner",
+      "location": "Port Harcourt, Nigeria",
+      "content": "The sound system automation in our restaurant has been game-changing. The multi-room audio creates the perfect ambiance for our customers.",
+      "rating": 5,
+      "service": "Sound System Automation"
+    },
+    {
+      "name": "David Williams",
+      "role": "Property Manager",
+      "location": "Lagos, Nigeria",
+      "content": "Their CCTV installation gave us complete peace of mind. The system is reliable, easy to use, and the image quality is excellent. Worth every naira!",
+      "rating": 5,
+      "service": "CCTV & Security Systems"
+    },
+    {
+      "name": "Grace Adebayo",
+      "role": "School Administrator",
+      "location": "Ibadan, Nigeria",
+      "content": "The fire alarm system installation was flawless. The team ensured everything was compliant with safety regulations. We feel much safer now.",
+      "rating": 5,
+      "service": "Fire Alarm Systems"
+    },
+    {
+      "name": "Emmanuel Nwosu",
+      "role": "Tech Entrepreneur",
+      "location": "Enugu, Nigeria",
+      "content": "Their embedded systems automation has streamlined our manufacturing process. The custom solution they provided is innovative and reliable.",
+      "rating": 5,
+      "service": "Embedded Systems & Automation"
+    },
+    {
+      "name": "Fatima Hassan",
+      "role": "Real Estate Developer",
+      "location": "Kano, Nigeria",
+      "content": "The biometric security system they installed provides top-tier security for our luxury apartments. Residents love the convenience and security features.",
+      "rating": 5,
+      "service": "Smart Locks & Biometric Security"
+    }
+  ]
+}
