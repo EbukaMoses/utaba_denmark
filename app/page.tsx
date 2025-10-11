@@ -5,7 +5,6 @@ import Hero from "../ui/Hero"
 import Container from "../ui/Container"
 import HeaderOne from "../ui/HeaderOne"
 import HeaderTwo from "../ui/HeaderTwo"
-import Divider from "../ui/Divider"
 import Button from "../ui/Button"
 import FrontServiceCard from "../ui/FrontServiceCard"
 import PictureGallery from "../ui/PictureGallery"
@@ -24,16 +23,13 @@ export default function Home() {
 
   // Testimonials carousel state
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    if (isPaused) return;
-
     const interval = setInterval(() => {
       setCurrentTestimonialIndex((prev) => (prev + 1) % Math.ceil(servicesData.testimonials.length / 3));
     }, 5000);
     return () => clearInterval(interval);
-  }, [isPaused]);
+  }, []);
 
   const nextTestimonials = () => {
     setCurrentTestimonialIndex((prev) => (prev + 1) % Math.ceil(servicesData.testimonials.length / 3));
@@ -280,7 +276,7 @@ export default function Home() {
             <span className="text-[#FE6500] font-semibold text-sm uppercase tracking-wider">Testimonials</span>
             <h2 className="text-4xl font-bold text-gray-900 mt-4 mb-6">What Our Clients Say</h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-              Don't just take our word for it - hear from our satisfied customers across Nigeria
+              Don&apos;t just take our word for it - hear from our satisfied customers across Nigeria
             </p>
           </div>
 
@@ -305,11 +301,11 @@ export default function Home() {
 
             {/* Testimonials Grid - Show 3 at a time */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
-              {getCurrentTestimonials().map((testimonial: any, index: number) => (
+              {getCurrentTestimonials().map((testimonial: {name: string; role: string; location: string; content: string; rating: number}, index: number) => (
                 <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl border border-gray-100">
                   {/* Rating Stars */}
                   <div className="flex items-center gap-1 mb-4">
-                    {[...Array(testimonial.rating)].map((_: any, i: number) => (
+                    {[...Array(testimonial.rating)].map((_: unknown, i: number) => (
                       <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                       </svg>
@@ -318,7 +314,7 @@ export default function Home() {
 
                   {/* Testimonial Content */}
                   <blockquote className="text-gray-700 leading-relaxed mb-6 italic">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </blockquote>
 
                   {/* Client Info */}

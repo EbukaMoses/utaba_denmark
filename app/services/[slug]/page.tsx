@@ -1,9 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import Container from '../../../ui/Container';
-import { CheckCircle2, Clock, Shield, ArrowRight, Phone } from 'lucide-react';
-import servicesData from '../../../data/services.json';
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import Container from "../../../ui/Container";
+import servicesData from "../../../data/services.json";
 
 // Generate static params for all services
 export function generateStaticParams() {
@@ -30,7 +30,7 @@ const ServiceDetailPage = ({ params }: PageProps) => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Service Not Found</h1>
-          <p className="text-gray-600 mb-8">The service you're looking for doesn't exist.</p>
+          <p className="text-gray-600 mb-8">The service you&apos;re looking for doesn&apos;t exist.</p>
           <Link href="/services" className="inline-flex items-center gap-2 bg-[#FE6500] hover:bg-[#e55a00] text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105">
             View All Services
             <ArrowRight className="w-5 h-5" />
