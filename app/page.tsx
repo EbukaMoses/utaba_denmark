@@ -73,7 +73,7 @@ export default function Home() {
       <Hero />
 
       {/* Quick Services Cards - Floating Above */}
-      <Container className="relative -mt-32 mb-20 z-40">
+      <Container className="relative mb-20 z-40">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
           {quickServices.map((service, index) => (
             <div 

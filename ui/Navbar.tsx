@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Container from "../ui/Container";
-import { Phone } from 'lucide-react';
 
 interface NavItem {
   title: string;
@@ -98,15 +97,6 @@ const Navbar = () => {
               />
             </Link>
           ))}
-          
-          {/* CTA Button */}
-          <Link
-            href="/contact"
-            className="ml-4 inline-flex items-center gap-2 bg-[#FE6500] hover:bg-[#e55a00] text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#FE6500]/30"
-          >
-            <Phone className="w-4 h-4" />
-            Get Quote
-          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -154,16 +144,6 @@ const Navbar = () => {
                 {item.title}
               </Link>
             ))}
-            <div className="px-8 py-4">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 w-full bg-[#FE6500] hover:bg-[#e55a00] text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <Phone className="w-4 h-4" />
-                Get Free Quote
-              </Link>
-            </div>
           </div>
         </div>
       </Container>

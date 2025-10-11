@@ -18,7 +18,7 @@ const Container = ({
   ariaLabel
 }: ContainerProps) => {
   const newClassName = twMerge(
-    "max-w-screen-xl mx-auto py-10 lg:py-30 px-4 lg:px-0",
+    "max-w-screen-xl mx-auto py-10 lg:py-20 px-4 lg:px-0",
     className
   );
 
