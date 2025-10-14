@@ -48,7 +48,7 @@ const page = () => {
             </div>
           </div>
           <div className="flex-1 group">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+            <div className="relative overflow-hidden">
               <Image 
                 src="/about.png" 
                 alt="About Onye BF Tech" 
@@ -56,7 +56,7 @@ const page = () => {
                 height={500} 
                 className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#FE6500]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-[#FE6500]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
             </div>
           </div>
         </Container>

@@ -74,16 +74,14 @@ const Hero = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* Video Background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover scale-105"
-      >
-        <source src="/banner-video.mp4" type="video/mp4" />
-      </video>
+      {/* YouTube Background */}
+      <iframe
+        src="https://www.youtube.com/embed/E38kuUE3BLg?autoplay=1&mute=1&loop=1&playlist=E38kuUE3BLg"
+        className="absolute inset-0 w-full h-screen object-cover scale-105"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        title="OnyeBF Tech Company Video"
+      ></iframe>
 
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" aria-hidden="true"></div>
@@ -134,14 +132,14 @@ const Hero = () => {
         <div className="max-w-5xl w-full text-center">
           {/* Main Title with Animation */}
           <div className={`transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-white text-3xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               <span className="inline-block animate-fade-in">{slides[index].title}</span>
             </h1>
           </div>
 
           {/* Subtitle with Staggered Animation */}
           <div className={`transition-all duration-1000 delay-200 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <p className="text-gray-100 text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-100 text-md md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
               {slides[index].subtitle}
             </p>
           </div>
@@ -150,14 +148,14 @@ const Hero = () => {
           <div className={`flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <Link
               href="/services"
-              className="group inline-flex items-center gap-2 bg-[#FE6500] hover:bg-[#e55a00] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#FE6500]/50"
+              className="group inline-flex items-center gap-2 bg-[#FE6500] hover:bg-[#e55a00] text-white px-6 lg:px-8 py-2 lg:py-4 rounded-full font-semibold text-md lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#FE6500]/50"
             >
               {slides[index].cta}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
+              className="group inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-6 lg:px-8 py-2 lg:py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
             >
               Get Free Quote
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />

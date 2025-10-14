@@ -212,7 +212,7 @@ const ServiceDetailPage = ({ params }: PageProps) => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-6 lg:px-8 py-3 lg:py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
               >
                 View All Services
               </Link>

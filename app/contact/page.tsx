@@ -188,7 +188,7 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#FE6500] hover:bg-[#e55a00] disabled:bg-[#FE6500]/50 text-white py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#FE6500]/30 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+                  className="w-full bg-[#FE6500] hover:bg-[#e55a00] disabled:bg-[#FE6500]/50 text-white py-2 lg:py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#FE6500]/30 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
                     <>

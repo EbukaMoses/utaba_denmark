@@ -36,7 +36,7 @@ const InnerPage = ({ title, subtitle }: { title: string; subtitle: string }) => 
           </nav>
 
           {/* Title */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-in">
             {title}
           </h1>
 
