@@ -48,7 +48,7 @@ export default function CoreValues() {
         {/* Right: Image */}
         <div className="relative w-full h-80 md:h-full">
           <Image
-            src="/corevalue.WEBP" // put your image under /public/images/
+            src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204834/corevalue_qciljc.webp" // put your image under /public/images/
             alt="Core Values Illustration"
             fill
             className="object-cover rounded-2xl shadow-lg"

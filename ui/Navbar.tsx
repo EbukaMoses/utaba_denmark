@@ -65,7 +65,7 @@ const Navbar = () => {
           aria-label="OnyeBF Technology"
         >
           <img
-            src="/logo.png"
+            src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204783/logo_fcx95q.png"
             alt="OnyeBf Technology Logo"
             className="w-28 lg:w-40 h-auto transition-transform duration-300 group-hover:scale-105"
           />

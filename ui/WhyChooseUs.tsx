@@ -12,7 +12,7 @@ const whyus = [
 ]
 
   return (
-    <div className="relative w-full bg-[url('/whyus.AVIF')] -z-5">
+    <div className="relative w-full bg-[url('https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204795/whyus_izt3ik.avif')] -z-5">
         <div className="absolute inset-0 bg-cover bg-center bg-gradient-to-t from-black via-black to-black opacity-80 -z-10"></div>
         <Container className="!z-50">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center items-center">

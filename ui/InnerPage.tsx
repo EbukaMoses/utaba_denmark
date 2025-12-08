@@ -4,13 +4,13 @@ import React from 'react'
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
-const InnerPage = ({ title, subtitle }: { title: string; subtitle: string }) => {
+const InnerPage = ({ title, subtitle, url }: { title: string; subtitle: string; url: string }) => {
   return (
     <section className="relative h-[300px] md:h-[450px] flex items-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/hero.jpg"
-        alt={`${title} Hero`}
+        src={url}
+        alt={`${title}`}
         fill
         className="object-cover scale-105"
         priority

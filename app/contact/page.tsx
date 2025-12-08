@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import InnerPage from "../../ui/InnerPage";
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 
 interface FormData {
   name: string;
@@ -22,30 +22,30 @@ const ContactPage = () => {
     email: '',
     message: ''
   });
-  
+
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       newErrors.email = 'Please enter a valid email address';
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
     } else if (formData.message.trim().length < 10) {
       newErrors.message = 'Message must be at least 10 characters long';
     }
-    
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -53,7 +53,7 @@ const ContactPage = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     // Clear error when user starts typing
     if (errors[name as keyof FormErrors]) {
       setErrors(prev => ({ ...prev, [name]: undefined }));
@@ -62,14 +62,14 @@ const ContactPage = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
-    
+
     setIsSubmitting(true);
     setSubmitStatus('idle');
-    
+
     try {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
@@ -85,8 +85,8 @@ const ContactPage = () => {
 
   return (
     <div>
-      <InnerPage title="Contact Us" subtitle="Get in touch with our team for professional automation and security solutions" />
-      
+      <InnerPage title="Contact Us" subtitle="Get in touch with our team for professional automation and security solutions" url="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204807/Our_Work_is_Simply___We_care_deeply___JPG__7_cqcbsg.jpg" />
+
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -98,7 +98,7 @@ const ContactPage = () => {
                 <h2 className="text-3xl font-bold text-gray-900 mt-2 mb-3">Send us a message</h2>
                 <div className="h-1 w-20 bg-[#FE6500]"></div>
               </div>
-              
+
               {submitStatus === 'success' && (
                 <div className="mb-6 p-5 bg-gradient-to-r from-green-50 to-green-100 border-l-4 border-green-500 text-green-700 rounded-lg shadow-md animate-fade-in">
                   <div className="flex items-center gap-3">
@@ -109,7 +109,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               )}
-              
+
               {submitStatus === 'error' && (
                 <div className="mb-6 p-5 bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 text-red-700 rounded-lg shadow-md animate-fade-in">
                   <div className="flex items-center gap-3">
@@ -120,7 +120,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               )}
-              
+
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
                   <label htmlFor="name" className="block text-gray-700 mb-1">
@@ -132,9 +132,8 @@ const ContactPage = () => {
                     type="text"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.name ? 'border-red-500' : 'border-gray-300'
-                    } focus:outline-none focus:ring-2 focus:ring-[#FE6500]`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.name ? 'border-red-500' : 'border-gray-300'
+                      } focus:outline-none focus:ring-2 focus:ring-[#FE6500]`}
                     placeholder="Your full name"
                     aria-describedby={errors.name ? 'name-error' : undefined}
                   />
@@ -142,7 +141,7 @@ const ContactPage = () => {
                     <p id="name-error" className="mt-1 text-sm text-red-600">{errors.name}</p>
                   )}
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-gray-700 mb-1">
                     Email <span className="text-red-500">*</span>
@@ -153,9 +152,8 @@ const ContactPage = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.email ? 'border-red-500' : 'border-gray-300'
-                    } focus:outline-none focus:ring-2 focus:ring-[#FE6500]`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.email ? 'border-red-500' : 'border-gray-300'
+                      } focus:outline-none focus:ring-2 focus:ring-[#FE6500]`}
                     placeholder="your.email@example.com"
                     aria-describedby={errors.email ? 'email-error' : undefined}
                   />
@@ -163,7 +161,7 @@ const ContactPage = () => {
                     <p id="email-error" className="mt-1 text-sm text-red-600">{errors.email}</p>
                   )}
                 </div>
-                
+
                 <div>
                   <label htmlFor="message" className="block text-gray-700 mb-1">
                     Message <span className="text-red-500">*</span>
@@ -174,9 +172,8 @@ const ContactPage = () => {
                     rows={4}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className={`w-full px-4 py-3 rounded-lg border ${
-                      errors.message ? 'border-red-500' : 'border-gray-300'
-                    } focus:outline-none focus:ring-2 focus:ring-[#FE6500]`}
+                    className={`w-full px-4 py-3 rounded-lg border ${errors.message ? 'border-red-500' : 'border-gray-300'
+                      } focus:outline-none focus:ring-2 focus:ring-[#FE6500]`}
                     placeholder="Tell us about your project or inquiry..."
                     aria-describedby={errors.message ? 'message-error' : undefined}
                   />
@@ -184,7 +181,7 @@ const ContactPage = () => {
                     <p id="message-error" className="mt-1 text-sm text-red-600">{errors.message}</p>
                   )}
                 </div>
-                
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
@@ -295,12 +292,12 @@ const ContactPage = () => {
                   <a href="#" className="w-12 h-12 bg-gray-100 rounded-full shadow flex items-center justify-center hover:bg-[#FE6500] hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group">
                     <Twitter className="w-5 h-5 text-gray-600 group-hover:text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-gray-100 rounded-full shadow flex items-center justify-center hover:bg-[#FE6500] hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group">
+                  <a href="https://www.instagram.com/onyebfelectricalengineering?igsh=NjNuOWJ3N3hyZWRl" className="w-12 h-12 bg-gray-100 rounded-full shadow flex items-center justify-center hover:bg-[#FE6500] hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group">
                     <Instagram className="w-5 h-5 text-gray-600 group-hover:text-white" />
                   </a>
-                  <a href="#" className="w-12 h-12 bg-gray-100 rounded-full shadow flex items-center justify-center hover:bg-[#FE6500] hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group">
+                  {/* <a href="#" className="w-12 h-12 bg-gray-100 rounded-full shadow flex items-center justify-center hover:bg-[#FE6500] hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg group">
                     <Linkedin className="w-5 h-5 text-gray-600 group-hover:text-white" />
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

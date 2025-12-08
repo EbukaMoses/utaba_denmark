@@ -5,7 +5,7 @@
       "title": "Smart Home Wiring",
       "shortDescription": "Professional installation of smart home wiring solutions for convenience, comfort, and efficiency.",
       "fullDescription": "Transform your living space into an intelligent, automated home with our comprehensive smart home wiring solutions. We design and install cutting-edge electrical infrastructure that seamlessly integrates with modern smart devices, creating a connected ecosystem that enhances your daily life through automation, energy efficiency, and enhanced security.",
-      "image": "/hero1.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204786/shw_oke7si.png",
       "icon": "Home",
       "features": [
         "Complete electrical infrastructure design",
@@ -79,7 +79,7 @@
       "title": "Electrical Wiring & Automation",
       "shortDescription": "Reliable electrical wiring combined with advanced automation to power your modern spaces.",
       "fullDescription": "Our electrical wiring and automation services combine traditional electrical expertise with cutting-edge automation technology. We ensure your residential or commercial property has a robust, safe, and intelligent electrical infrastructure that meets all modern demands while providing enhanced control and energy efficiency.",
-      "image": "/hero2.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204807/photo_2025-10-13_20.32.53_zovfsj.jpg",
       "icon": "Zap",
       "features": [
         "Complete electrical system design and planning",
@@ -153,7 +153,7 @@
       "title": "Sound System Automation",
       "shortDescription": "High-quality sound system automation for seamless entertainment and immersive audio experience.",
       "fullDescription": "Experience premium audio throughout your home or business with our advanced sound system automation. We design and install multi-room audio systems that deliver crystal-clear sound with effortless control from any device, creating immersive entertainment environments that adapt to your lifestyle and preferences.",
-      "image": "/hero3.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204786/ssa_qveiy3.png",
       "icon": "Volume2",
       "features": [
         "Multi-room audio distribution systems",
@@ -227,7 +227,7 @@
       "title": "CCTV & Security Systems",
       "shortDescription": "Comprehensive CCTV installation and monitoring solutions to keep your property secure.",
       "fullDescription": "Protect your property with our state-of-the-art CCTV and security systems. We provide comprehensive surveillance solutions with high-definition cameras, intelligent analytics, and remote monitoring capabilities to ensure your safety 24/7, giving you complete peace of mind and protection.",
-      "image": "/hero4.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204833/cctv_ads6hq.jpg",
       "icon": "Video",
       "features": [
         "4K Ultra HD camera systems with night vision",
@@ -301,7 +301,7 @@
       "title": "Fire Alarm Systems",
       "shortDescription": "Advanced fire alarm systems to safeguard lives and property with timely alerts.",
       "fullDescription": "Ensure the safety of your property and occupants with our advanced fire alarm systems. We install comprehensive fire detection and alarm systems that provide early warning, automatic response, and compliance with all safety regulations, protecting what matters most to you.",
-      "image": "/hero5.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204785/fire_amcgun.jpg",
       "icon": "Bell",
       "features": [
         "Advanced smoke and heat detection sensors",
@@ -375,7 +375,7 @@
       "title": "Embedded Systems & Automation",
       "shortDescription": "Custom embedded system designs to automate and streamline your operations.",
       "fullDescription": "Leverage the power of custom embedded systems to automate complex processes and improve operational efficiency. We design and implement tailored automation solutions for industrial, commercial, and residential applications, creating intelligent systems that adapt to your specific needs and requirements.",
-      "image": "/hero1.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204784/embed-sys_casnzm.webp",
       "icon": "Cpu",
       "features": [
         "Custom microcontroller and microprocessor programming",
@@ -449,7 +449,7 @@
       "title": "Smart Locks & Biometric Security",
       "shortDescription": "Advanced biometric and smart lock systems for enhanced security and convenient access control.",
       "fullDescription": "Secure your property with cutting-edge smart lock and biometric security systems. Our advanced access control solutions combine fingerprint recognition, facial detection, and smart card technology to provide secure, convenient, and intelligent entry management for residential and commercial properties.",
-      "image": "/hero5.jpg",
+      "image": "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204784/gallery-inner_n9mnos.webp",
       "icon": "Shield",
       "features": [
         "Fingerprint and facial recognition systems",

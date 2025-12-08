@@ -8,7 +8,7 @@ export default function Services() {
 
   return (
     <div>
-      <InnerPage title="Our Services" subtitle="Professional automation and security solutions tailored to your needs" />
+      <InnerPage title="Our Services" subtitle="Professional automation and security solutions tailored to your needs" url="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204785/service-inner_zr6cvd.jpg" />
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           {/* <div className="text-center mb-16">

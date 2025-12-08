@@ -1,24 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from 'next/font/google';
 import "./globals.css";
 import Navbar from "../ui/Navbar"
 import Footer from "../ui/Footer";
 import ScrollToTop from "../ui/ScrollToTop";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+// Initialize Inter font with required subsets and display settings
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+  weight: ['400', '500', '600', '700'], // Include all the font weights you need
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://onyebftech.com'),
   icons: {
-    icon: "/favicon.jpg",
+    icon: "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204783/favicon_is4z6o.jpg",
   },
   title: {
     default: "Onye BF Tech - Smart Home Automation & Security Solutions",
@@ -74,10 +72,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${inter.variable} font-sans scroll-smooth`}>
+      <body className="bg-white text-gray-900 antialiased">
         <Navbar />
         {children}
         <Footer />

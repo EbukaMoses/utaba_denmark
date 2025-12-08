@@ -1,6 +1,7 @@
 'use client';
 import React from 'react'
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 const Footer = () => {
@@ -10,7 +11,14 @@ const Footer = () => {
         {/* Company Info */}
         <div className="space-y-6">
           <div>
-            <h2 className="text-2xl font-bold text-white mb-2">Onye BF Tech</h2>
+            <Image
+              src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765209887/logo3_gvwelh.png"
+              alt="Onye BF Tech logo"
+              width={180}
+              height={60}
+              className="h-14 w-auto object-contain -mb-3"
+              priority
+            />
           </div>
           <p className="text-sm leading-relaxed text-gray-300">
             Leading provider of smart home automation and security solutions.
@@ -35,7 +43,7 @@ const Footer = () => {
             >
               <Twitter className="h-5 w-5" />
             </a>
-            <a
+            {/* <a
               href="https://linkedin.com/company/onyebftech"
               target="_blank"
               rel="noopener noreferrer"
@@ -43,9 +51,9 @@ const Footer = () => {
               aria-label="Connect with us on LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
-            </a>
+            </a> */}
             <a
-              href="https://instagram.com/onyebftech"
+              href="https://www.instagram.com/onyebfelectricalengineering?igsh=NjNuOWJ3N3hyZWRl"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FE6500] transition-all duration-300 hover:scale-110"

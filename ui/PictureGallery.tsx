@@ -1,10 +1,12 @@
 "use client";
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
-const PictureGallery = ({ images }: { images: string[] }) => {
+const PictureGallery = ({ images, limit }: { images: string[]; limit?: number }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const displayImages =
+    typeof limit === "number" && limit > 0 ? images.slice(0, limit) : images;
 
   // Debug: Check if images are being passed
   console.log('PictureGallery images:', images);
@@ -28,11 +30,11 @@ const PictureGallery = ({ images }: { images: string[] }) => {
   };
 
   const nextImage = () => {
-    setSelectedIndex((prev) => (prev + 1) % images.length);
+    setSelectedIndex((prev) => (prev + 1) % displayImages.length);
   };
 
   const prevImage = () => {
-    setSelectedIndex((prev) => (prev - 1 + images.length) % images.length);
+    setSelectedIndex((prev) => (prev - 1 + displayImages.length) % displayImages.length);
   };
 
   // Handle keyboard navigation
@@ -57,7 +59,7 @@ const PictureGallery = ({ images }: { images: string[] }) => {
     <div className="w-full">
       {/* Gallery Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
-        {images.map((img, index) => (
+        {displayImages.map((img, index) => (
           <div
             key={index}
             className="relative group cursor-pointer overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
@@ -111,7 +113,7 @@ const PictureGallery = ({ images }: { images: string[] }) => {
             </button>
 
             {/* Navigation Arrows */}
-            {images.length > 1 && (
+            {displayImages.length > 1 && (
               <>
                 <button
                   className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-[#333333] hover:bg-[#FE6500] text-white p-3 rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white"
@@ -138,7 +140,7 @@ const PictureGallery = ({ images }: { images: string[] }) => {
             {/* Main Image */}
             <div className="relative">
               <Image
-                src={images[selectedIndex]}
+                src={displayImages[selectedIndex]}
                 alt={`Gallery image ${selectedIndex + 1}`}
                 width={800}
                 height={600}
@@ -148,22 +150,20 @@ const PictureGallery = ({ images }: { images: string[] }) => {
             </div>
 
             {/* Image Counter */}
-            {images.length > 1 && (
+            {displayImages.length > 1 && (
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-[#333333] text-white px-4 py-2 rounded-full text-sm">
-                {selectedIndex + 1} / {images.length}
+                {selectedIndex + 1} / {displayImages.length}
               </div>
             )}
 
             {/* Thumbnail Strip */}
-            {images.length > 1 && (
+            {displayImages.length > 1 && (
               <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-2 max-w-full overflow-x-auto">
-                {images.map((img, index) => (
+                {displayImages.map((img, index) => (
                   <button
                     key={index}
                     onClick={() => setSelectedIndex(index)}
-                    className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 ${index === selectedIndex
-                      ? 'border-[#FE6500] scale-110'
-                      : 'border-transparent hover:border-white'
+                    className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-200 ${index === selectedIndex ? "border-[#FE6500] scale-110" : "border-transparent hover:border-white"
                       }`}
                   >
                     <Image

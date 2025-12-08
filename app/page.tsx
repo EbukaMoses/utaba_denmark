@@ -8,17 +8,17 @@ import HeaderTwo from "../ui/HeaderTwo"
 import Button from "../ui/Button"
 import FrontServiceCard from "../ui/FrontServiceCard"
 import PictureGallery from "../ui/PictureGallery"
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react"
+import { CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react"
 import servicesData from "../data/services.json"
 import { useState, useEffect } from "react"
 
 export default function Home() {
   const services = [
-    { title: "Smart Home Wiring", description: "Professional installation of smart home wiring solutions for convenience, comfort, and efficiency", imgSrc: "/hero1.jpg", slug: "smart-home-wiring" },
-    { title: "Sound System Automation", description: "High-quality sound system automation for seamless entertainment and immersive audio experience", imgSrc: "/hero2.jpg", slug: "sound-system-automation" },
-    { title: "CCTV & Security", description: "Comprehensive CCTV installation and monitoring solutions to keep your property secure", imgSrc: "/hero3.jpg", slug: "cctv" },
-    { title: "Fire Alarm Systems", description: "Advanced fire alarm systems to safeguard lives and property with timely alerts", imgSrc: "/hero4.jpg", slug: "fire-alarm" },
-    { title: "Embedded Systems", description: "Custom embedded system designs to automate and streamline your operations", imgSrc: "/hero5.jpg", slug: "embedded-systems-automation" },
+    { title: "Smart Home Wiring", description: "Professional installation of smart home wiring solutions for convenience, comfort, and efficiency", imgSrc: "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204786/shw_oke7si.png", slug: "smart-home-wiring" },
+    { title: "Sound System Automation", description: "High-quality sound system automation for seamless entertainment and immersive audio experience", imgSrc: "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204786/ssa_qveiy3.png", slug: "sound-system-automation" },
+    { title: "CCTV & Security", description: "Comprehensive CCTV installation and monitoring solutions to keep your property secure", imgSrc: "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204833/cctv_ads6hq.jpg", slug: "cctv" },
+    { title: "Fire Alarm Systems", description: "Advanced fire alarm systems to safeguard lives and property with timely alerts", imgSrc: "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204785/fire_amcgun.jpg", slug: "fire-alarm" },
+    { title: "Embedded Systems", description: "Custom embedded system designs to automate and streamline your operations", imgSrc: "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204784/embed-sys_casnzm.webp", slug: "embedded-systems-automation" },
   ];
 
   // Testimonials carousel state
@@ -50,30 +50,23 @@ export default function Home() {
   };
 
   const images = [
-    "/hero1.jpg",
-    "/hero2.jpg",
-    "/hero3.jpg",
-    "/hero4.jpg",
-    "/hero5.jpg",
-    "/about.png",
-    "/mission.jpg",
-    "/vision.jpg",
-    "/corevalue.webp"
-  ];
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204826/photo_2025-10-13_20.34.10_h0svnp.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204826/photo_2025-10-13_20.33.54_xy8p9g.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204815/photo_2025-10-13_20.33.07_ddfwpc.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204815/photo_2025-10-13_20.33.18_mganhb.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204805/Our_Work_is_Simply___We_care_deeply___JPG__0_vl4a6z.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204805/Onyebf_Electrical_Engineering..._Smart_Home_Automation..._Coming_up_WEBP__3_umvqdi.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204806/Our_Work_is_Simply___We_care_deeply___JPG__3_lneh0g.jpg",
+    "https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204807/Our_Work_is_Simply___We_care_deeply___JPG__4_bcytjw.jpg"
 
-  const quickServices = [
-    { title: "Smart Home Wiring", description: "Professional installation of smart home wiring solutions for convenience and efficiency.", imgSrc: "/hero1.jpg" },
-    { title: "Sound System Automation", description: "High-quality sound system automation for seamless entertainment experience.", imgSrc: "/hero2.jpg" },
-    { title: "CCTV & Security", description: "Comprehensive CCTV installation and monitoring solutions for property security.", imgSrc: "/hero3.jpg" },
-    { title: "Fire Alarm Systems", description: "Advanced fire alarm systems to safeguard lives and property with timely alerts.", imgSrc: "/hero4.jpg" },
   ];
 
   return (
-    <div className="font-sans">
+    <div className="font-sans p-0">
       <Hero />
 
       {/* Quick Services Cards - Floating Above */}
-      <Container className="relative mb-20 z-40">
+      {/* <Container className="relative mb-20 z-40">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
           {quickServices.map((service, index) => (
             <div 
@@ -105,19 +98,19 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </Container>
+      </Container> */}
 
       {/* about section  */}
       <div className="w-full bg-gradient-to-br from-gray-50 to-gray-100 py-20">
         <Container className="flex flex-col lg:flex-row gap-12 items-center">
           <div className="w-full lg:w-1/2 group">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <Image 
-                src="/about2.jpg" 
-                alt="About Onye BF Tech" 
-                width={600} 
-                height={500} 
-                className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700" 
+              <Image
+                src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204828/about_aanfrb.jpg"
+                alt="About Onye BF Tech"
+                width={600}
+                height={500}
+                className="w-full h-auto transform group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#FE6500]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -134,7 +127,7 @@ export default function Home() {
             <p className="text-gray-700 leading-relaxed">
               We understand that every space is unique, which is why we provide customized solutions tailored to your specific needs. From intelligent lighting control to comprehensive CCTV monitoring, we ensure your property is not just connected, but truly smart and secure.
             </p>
-            
+
             {/* Key Features */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="flex items-start gap-3">
@@ -182,20 +175,20 @@ export default function Home() {
               We provide comprehensive automation and security solutions designed to enhance your living and working environment with cutting-edge technology and reliable service.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((item, index) => (
-              <FrontServiceCard 
-                key={index} 
-                title={item.title} 
-                description={item.description} 
-                imgSrc={item.imgSrc} 
+            {services.slice(0, 3).map((item, index) => (
+              <FrontServiceCard
+                key={index}
+                title={item.title}
+                description={item.description}
+                imgSrc={item.imgSrc}
                 slug={item.slug}
-                className="h-80" 
+                className="h-80"
               />
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Button className="bg-[#FE6500] text-white text-lg px-8 py-4" path="/services" title="View All Services" />
           </div>
@@ -203,14 +196,14 @@ export default function Home() {
       </div>
 
       {/* why choose us section  */}
-      <div className="relative w-full bg-[url('/hero.jpg')] bg-cover bg-center bg-fixed py-24">
+      <div className="relative w-full bg-[url('https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204794/whyus2_wlpfn8.jpg')] bg-cover bg-center bg-fixed py-24">
         <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-black/85 to-[#FE6500]/30"></div>
         <Container className="relative z-10">
           <div className="text-center mb-12">
             <span className="text-[#FE6500] font-semibold text-sm uppercase tracking-wider">Our Advantage</span>
             <HeaderTwo title="Why Choose Us" className="text-white !text-4xl !font-bold mt-4 mb-6" />
           </div>
-          
+
           <div className="max-w-4xl mx-auto space-y-6 text-white text-center text-lg leading-relaxed mb-12">
             <p>
               With over a decade of experience in automation and security systems, we bring unmatched expertise to every project. Our certified technicians use only premium components and cutting-edge technology to ensure your systems are reliable, efficient, and future-proof.
@@ -231,7 +224,7 @@ export default function Home() {
                 We use only the highest quality components and materials for lasting performance.
               </p>
             </div>
-            
+
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-[#FE6500] rounded-full flex items-center justify-center mb-6 mx-auto">
                 <CheckCircle2 className="w-8 h-8 text-white" />
@@ -241,7 +234,7 @@ export default function Home() {
                 Certified professionals with years of experience in automation systems.
               </p>
             </div>
-            
+
             <div className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2">
               <div className="w-16 h-16 bg-[#FE6500] rounded-full flex items-center justify-center mb-6 mx-auto">
                 <CheckCircle2 className="w-8 h-8 text-white" />
@@ -265,7 +258,7 @@ export default function Home() {
               Explore our portfolio of successful installations and see the quality of our work firsthand.
             </p>
           </div>
-          <PictureGallery images={images} />
+          <PictureGallery images={images} limit={8} />
         </Container>
       </div>
 
@@ -301,7 +294,7 @@ export default function Home() {
 
             {/* Testimonials Grid - Show 3 at a time */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 overflow-hidden">
-              {getCurrentTestimonials().map((testimonial: {name: string; role: string; location: string; content: string; rating: number}, index: number) => (
+              {getCurrentTestimonials().map((testimonial: { name: string; role: string; location: string; content: string; rating: number }, index: number) => (
                 <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 transform hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl border border-gray-100">
                   {/* Rating Stars */}
                   <div className="flex items-center gap-1 mb-4">
@@ -340,9 +333,8 @@ export default function Home() {
                 <button
                   key={i}
                   onClick={() => goToTestimonialSlide(i)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    i === currentTestimonialIndex ? 'bg-[#FE6500] w-8' : 'bg-gray-300 w-4 hover:bg-gray-400'
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${i === currentTestimonialIndex ? 'bg-[#FE6500] w-8' : 'bg-gray-300 w-4 hover:bg-gray-400'
+                    }`}
                   aria-label={`Go to testimonial set ${i + 1}`}
                 />
               ))}

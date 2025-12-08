@@ -69,7 +69,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full h-screen overflow-hidden p-0"
       aria-label="Hero carousel"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -77,7 +77,7 @@ const Hero = () => {
       {/* YouTube Background */}
       <iframe
         src="https://www.youtube.com/embed/E38kuUE3BLg?autoplay=1&mute=1&loop=1&playlist=E38kuUE3BLg"
-        className="absolute inset-0 w-full h-screen object-cover scale-105"
+        className="absolute inset-0 w-full h-screen p-0 m-0 object-cover scale-105"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
         title="OnyeBF Tech Company Video"
@@ -115,7 +115,7 @@ const Hero = () => {
 
       {/* Slide indicators */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3">
-        {slides.map((_, i) => (
+        {/* {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => goToSlide(i)}
@@ -124,7 +124,7 @@ const Hero = () => {
             }`}
             aria-label={`Go to slide ${i + 1}`}
           />
-        ))}
+        ))} */}
       </div>
 
       {/* Text content */}
@@ -155,7 +155,7 @@ const Hero = () => {
             </Link>
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-6 lg:px-8 py-2 lg:py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
+              className="group inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
             >
               Get Free Quote
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />

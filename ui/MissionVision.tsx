@@ -25,7 +25,7 @@ export default function MissionVision() {
           {/* Image */}
           <div className="relative w-full h-72 md:h-96 rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/mission.jpg" // replace with your image in /public/images
+              src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204785/mission_sxigfc.jpg" // replace with your image in /public/images
               alt="Our Mission"
               fill
               className="object-cover"
@@ -38,7 +38,7 @@ export default function MissionVision() {
           {/* Image */}
           <div className="relative w-full h-72 md:h-96 rounded-2xl overflow-hidden shadow-lg order-last md:order-first">
             <Image
-              src="/vision.jpg" // replace with your image
+              src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204786/vision_wbchgc.avif" // replace with your image
               alt="Our Vision"
               fill
               className="object-cover"

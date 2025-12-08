@@ -1,11 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  // Removed output: 'export' as it's incompatible with Image Optimization API
-  // If you need static export, use `next build` instead of `next dev`
+  output: 'export',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
   },
 };
 
