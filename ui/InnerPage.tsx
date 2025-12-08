@@ -9,7 +9,7 @@ const InnerPage = ({ title, subtitle }: { title: string; subtitle: string }) => 
     <section className="relative h-[300px] md:h-[450px] flex items-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/hero.jpg"
+        src="/hero4.jpg"
         alt={`${title} Hero`}
         fill
         className="object-cover scale-105"
@@ -17,13 +17,20 @@ const InnerPage = ({ title, subtitle }: { title: string; subtitle: string }) => 
       />
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40 opacity-70 mix-blend-multiply pointer-events-none" />
 
       {/* Animated Grid Pattern */}
-      <div className="absolute inset-0 opacity-10" style={{
-        backgroundImage: 'linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px)',
-        backgroundSize: '50px 50px'
-      }} />
+      <div
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px), url('/images/hero4.jpg')",
+          backgroundSize: '50px 50px, 50px 50px, cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'repeat, repeat, no-repeat',
+          backgroundBlendMode: 'normal, normal, multiply',
+        }}
+      />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
