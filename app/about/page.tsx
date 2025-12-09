@@ -49,7 +49,7 @@ const page = () => {
           <div className="flex-1 group">
             <div className="relative overflow-hidden">
               <Image
-                src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765204890/about_o2iz2n.png"
+                src="https://res.cloudinary.com/dzhbpmnan/image/upload/v1765286142/about_f9d9dm.png"
                 alt="About Onye BF Tech"
                 width={600}
                 height={500}
