@@ -130,10 +130,6 @@ const Footer = () => {
       <div className="border-t border-gray-700/50 mt-12">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p className="mb-2 md:mb-0"> {new Date().getFullYear()} Onye BF Tech. All rights reserved.</p>
-          <div className="flex space-x-6">
-            <Link href="/privacy" className="hover:text-[#FE6500] transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-[#FE6500] transition-colors">Terms of Service</Link>
-          </div>
         </div>
       </div>
     </footer>

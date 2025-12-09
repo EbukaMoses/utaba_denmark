@@ -74,13 +74,22 @@ const Hero = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      {/* YouTube Background */}
+      {/* show this video on tablet and desktop screen sizes, hide on mobile */}
       <iframe
-        src="https://www.youtube.com/embed/E38kuUE3BLg?autoplay=1&mute=1&loop=1&playlist=E38kuUE3BLg"
-        className="absolute inset-0 w-full h-screen p-0 m-0 object-cover scale-105"
+        src="https://www.youtube.com/embed/E38kuUE3BLg?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&playlist=E38kuUE3BLg"
+        className="absolute top-0 left-0 right-0 bottom-0 w-full h-full min-w-full border-0 hidden md:block"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-        title="OnyeBF Tech Company Video"
+        title="OnyeBF Technologies Company"
+      ></iframe>
+
+      {/* show this video only on mobile screen size, hide on tablet and desktop */}
+      <iframe
+        src="https://www.youtube.com/embed/jlXRSzuuXSA?autoplay=1&mute=1&loop=1&controls=0&modestbranding=1&rel=0&playlist=jlXRSzuuXSA"
+        className="absolute top-0 left-0 right-0 bottom-0 w-full h-full min-w-full border-0 block md:hidden"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+        title="OnyeBF Technologies Company"
       ></iframe>
 
       {/* Gradient Overlay */}
@@ -153,13 +162,7 @@ const Hero = () => {
               {slides[index].cta}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <Link
-              href="/contact"
-              className="group inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/50 hover:border-white px-6 lg:px-8 py-2 lg:py-3 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
-            >
-              Get Free Quote
-              <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
-            </Link>
+            
           </div>
 
           {/* Stats Section */}
