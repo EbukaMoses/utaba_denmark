@@ -12,14 +12,15 @@ export function generateStaticParams() {
   }));
 }
 
-interface PageProps {
-  params: {
+type PageProps = {
+  // Next.js type generation expects params as a Promise for static exports
+  params: Promise<{
     slug: string;
-  };
-}
+  }>;
+};
 
-const ServiceDetailPage = ({ params }: PageProps) => {
-  const { slug } = params;
+const ServiceDetailPage = async ({ params }: PageProps) => {
+  const { slug } = await params;
 
   // Find the service by slug
   const service = servicesData.services.find(s => s.id === slug);
@@ -52,7 +53,7 @@ const ServiceDetailPage = ({ params }: PageProps) => {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-3xl">
             {/* Breadcrumb */}

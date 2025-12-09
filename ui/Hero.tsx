@@ -162,7 +162,7 @@ const Hero = () => {
               {slides[index].cta}
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            
+
           </div>
 
           {/* Stats Section */}
