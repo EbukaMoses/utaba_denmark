@@ -14,33 +14,34 @@ export default function CoreValues() {
             Core Values
           </h2>
           <p className="text-gray-600 mb-8">
-            Our core value is built on the following:
+            We build every solution around people—earning trust, protecting your
+            space, and making technology feel effortless.
           </p>
-
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-            Integrity
-          </h3>
 
           <ul className="space-y-4">
             <li className="flex items-start space-x-3">
               <CheckCircle2 className="h-5 w-5 text-black-600 mt-1" />
               <span className="text-gray-700">
-                Honest and transparent processes from start to finish.
+                <span className="font-semibold text-gray-900">Integrity & transparency:</span> clear proposals, no hidden steps, and updates you can count on.
               </span>
             </li>
             <li className="flex items-start space-x-3">
               <CheckCircle2 className="h-5 w-5 text-black-600 mt-1" />
               <span className="text-gray-700">
-                Committed to providing the best of the best of designs.
+                <span className="font-semibold text-gray-900">Safety & reliability first:</span> every device, wire, and integration is tested to keep your home or business secure.
               </span>
             </li>
             <li className="flex items-start space-x-3">
               <CheckCircle2 className="h-5 w-5 text-black-600 mt-1" />
-              <span className="text-gray-700">Reputation means a lot to us.</span>
+              <span className="text-gray-700">
+                <span className="font-semibold text-gray-900">Design with purpose:</span> automation scenes and security workflows tailored to how you actually live and work.
+              </span>
             </li>
             <li className="flex items-start space-x-3">
               <CheckCircle2 className="h-5 w-5 text-black-600 mt-1" />
-              <span className="text-gray-700">When we promise, we deliver.</span>
+              <span className="text-gray-700">
+                <span className="font-semibold text-gray-900">Ownership after handover:</span> training, maintenance, and quick support so your systems stay smooth over time.
+              </span>
             </li>
           </ul>
         </div>

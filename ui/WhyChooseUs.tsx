@@ -5,10 +5,22 @@ import Container from "./Container";
 
 export default function WhyChooseUs() {
 const whyus = [
-    {title: "Fast Building", description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"},
-    {title: "Smartly Execute", description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"},
-    {title: "Carefully Planned", description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"},
-    {title: "Perfect Design", description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"},
+  {
+    title: "Certified Specialists",
+    description: "Experienced engineers in smart wiring, automation, CCTV, and fire safety who design systems that actually fit your space.",
+  },
+  {
+    title: "Custom-Built Solutions",
+    description: "We start with your goals—comfort, safety, efficiency—and tailor every device, scene, and workflow to your daily routine.",
+  },
+  {
+    title: "Reliable Delivery",
+    description: "Clear timelines, tidy installations, and handover you can trust—so your home or business stays connected without drama.",
+  },
+  {
+    title: "End-to-End Support",
+    description: "From consult to maintenance, we keep you informed and supported, ensuring your systems stay secure and up to date.",
+  },
 ]
 
   return (
@@ -22,9 +34,10 @@ const whyus = [
             WHY CHOOSE US
           </h2>
           <p className="text-white leading-relaxed">
-            Asa Castle is known for its integrity. Clients have praised the group
-            for their consistency, respect and vision. The company ensures that the
-            client feels connected to the artistic process.
+            Onye BF Tech delivers reliable, human-centered automation and security.
+            We combine certified expertise with transparent communication, so you stay
+            connected to every decision—getting a smarter, safer space that works the
+            way you live and operate.
           </p>
         </div>
 

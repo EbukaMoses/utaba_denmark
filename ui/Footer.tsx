@@ -130,6 +130,14 @@ const Footer = () => {
       <div className="border-t border-gray-700/50 mt-12">
         <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p className="mb-2 md:mb-0"> {new Date().getFullYear()} Onye BF Tech. All rights reserved.</p>
+          <a
+            href="https://ebukamoses.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-[#FE6500] transition-colors"
+          >
+            Built by Ebuka Moses
+          </a>
         </div>
       </div>
     </footer>
